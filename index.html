@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta href="utf-8">
+        <meta name="viewport" width="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="app-interface">
+            <h1>Team Stats</h1>
+            <div id="team-stats">
+                <p>Team: <span class="bold" id="team"></span></p>
+                <p>Sport: <span class="bold" id="sport"></span></p>
+                <p>Year: <span class="bold" id="year"></span></p>
+                <p>Head Coach: <span class="bold" id="head-coach"></span></p>
+            </div>
+            <div id="players-filter">
+                <label for="input-filter">Filter Teammates:</label>
+                <select name="input-filter" id="input-filter">
+                    <option value="none">--Choose a filter--</option>
+                    <option value="default">All Players</option>
+                    <option value="nicknames">Nicknames</option>
+                    <option value="forward">Position Forward</option>
+                    <option value="midfielder">Position Midfielder</option>
+                    <option value="defender">Position Defender</option>
+                    <option value="goalkeeper">Position Goalkeeper</option>
+                </select>
+            </div>
+            <div id="players-cards-showcase">
+                
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
