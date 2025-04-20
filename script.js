@@ -190,9 +190,18 @@ filterInput.addEventListener("change",(e)=>{
             showPlayersCards(players);
             break;
         case "nicknames":
-            showPlayersCards
+            showPlayersCards(players.filter(player => player.nickname!=null))
         case "forward":
-            showPlayersCards(players.filter(player=>player.position==="forward"));
+            showPlayersCards(players.filter(player => player.position==="forward"));
+            break;
+        case "midfielder":
+            showPlayersCards(players.filter(player => player.position==="midfielder"));
+            break;
+        case "defender":
+            showPlayersCards(players.filter(player => player.position==="defender"));
+            break;
+        case "goalkeeper":
+            showPlayersCards(players.filter(player => player.position==="goalkeeper"));
             break;
     }
 })
