@@ -44,6 +44,12 @@ h1{
     height: 120px;
     padding: 10px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 #player-card-name{
